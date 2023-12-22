@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Flask Survey{% endblock %}
+{% block content %}
+<h1>Welcome to my survey!</h1>
+<p>{{ survey.title }}</p>
+<p>{{ survey.instructions }}</p>
+
+<form action="/begin" method="POST">
+    <button>Let's Start!</button>
+</form>
+{% endblock%}
